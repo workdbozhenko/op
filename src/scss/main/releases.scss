@@ -1,0 +1,106 @@
+.releases {
+  &_title {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &_wrap {
+    position: relative;
+  }
+
+  &_list {
+    position: relative;
+
+    .slick-dots {
+      position: relative;
+      bottom: -22px;
+    }
+
+    .slick-list {
+      margin: 0 -12px;
+    }
+  }
+
+  &_item {
+    display: inline-block;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    &_info {
+      font-size: 18px;
+      line-height: 1.22;
+      color: $secondaryColor;
+      font-weight: 700;
+      margin-bottom: 16px;
+
+      span {
+        &::after {
+          content: '';
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 6px;
+          background-color: $secondaryColor;
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_img {
+      width: 267px;
+      height: 267px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $darkColor;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      margin-bottom: 16px;
+
+      img {
+        transition: 0.3s ease;
+        transform-origin: center center;
+      }
+    }
+
+    &_type {
+      font-size: 18px;
+      line-height: 1.22;
+      color: $secondaryColor;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    &_name {
+      font-size: 24px;
+      font-weight: 700;
+      color: $whiteColor;
+      line-height: 1.25;
+      max-width: 267px;
+    }
+  }
+
+  &_item-wrap {
+    margin: 0 12px;
+  }
+
+  &_nav {
+    display: none;
+
+    &.slick-arrow {
+      display: block;
+    }
+  }
+}

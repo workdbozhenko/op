@@ -1,0 +1,68 @@
+doctype html
+include parts/head
+link(href='./css/shop.css' rel='stylesheet')
+body
+    .main-wrap.shop
+        include parts/header
+        .page-content.common-page
+            .container
+                .common-page_title Магазин
+                .common-page_tabs
+                    .common-page_tabs_item.active Футболки
+                    .common-page_tabs_item Диски
+                    .common-page_tabs_item Винил
+                    .common-page_tabs_item Флешки
+                    .common-page_tabs_item Майки
+                    .common-page_tabs_item Маски
+                    .common-page_tabs_item Шарфы
+                .merch
+                    .merch_content
+                        .merch_img
+                            img(src="/assets/example/example1.jpg")
+                        .merch_item
+                            .merch_item_name Футболка “Время будить королей”
+                            .merch_item_description  Материал футболки износостойкий и выдерживает многократные стирки при этом сохраняет цвет и не кашлатится.
+                            .merch_item_type
+                                .merch_item_type_section
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="gender" value="female" checked)
+                                            .radio_input
+                                            .radio_label Женская
+
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="gender" value="male")
+                                            .radio_input
+                                            .radio_label Мужская
+                                .merch_item_type_section
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="size" value="x" checked)
+                                            .radio_input
+                                            .radio_label X
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="size" value="xx")
+                                            .radio_input
+                                            .radio_label XX
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="size" value="xxl")
+                                            .radio_input
+                                            .radio_label XXL
+                                .merch_item_type_section
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="color" value="white" checked)
+                                            .radio_input
+                                            .radio_label Белая
+                                    .merch_item_type_item
+                                        .radio
+                                            input(type="radio" name="color" value="black")
+                                            .radio_input
+                                            .radio_label Черная
+                            .merch_item_buy
+                                .merch_item_buy_price 1.199₽
+                                button.merch_item_buy_btn.btn  купить
+        include parts/footer

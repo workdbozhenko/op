@@ -1,0 +1,21 @@
+@import "./main/vars";
+@import "./main/common";
+@import "./main/merch";
+
+.shop {
+  .merch {
+    margin: 90px 0;
+
+    &_img {
+      margin-right: 75px;
+    }
+
+    &_content {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

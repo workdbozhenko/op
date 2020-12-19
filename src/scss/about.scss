@@ -1,0 +1,47 @@
+@import "./main/vars";
+@import "./main/common";
+
+.about {
+  background: url('/img/about-bg.jpg') center center no-repeat;
+  background-size: cover;
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+
+    &_main {
+      width: 58px;
+      height: 114px;
+      background: url('/img/top-logo.svg') no-repeat center;
+      background-size: contain;
+    }
+
+    &_bot {
+      width: 309px;
+      height: 90px;
+      margin-top: 46px;
+      background: url('/img/bot-logo.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &_content {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $whiteColor;
+    max-width: 755px;
+    margin: 42px auto 44px;
+
+    p {
+      margin-bottom: 23px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

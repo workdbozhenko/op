@@ -1,0 +1,67 @@
+doctype html
+include parts/head
+link(href='./css/album.css' rel='stylesheet')
+body
+    .main-wrap.album
+        include parts/header
+        .album_background(style="background-image: url('/assets/example/album1.png')")
+        .page-content.common-page
+            .container
+                .common-page_title-wrap
+                    a(href="#").common-page_back-link
+                    .common-page_title Время будить королей
+                .album_details
+                    span 2020
+                    span 14 треков
+                .album_content
+                    .album_img-wrap
+                        .album_img
+                            img(src="/assets/example/album-example.jpg" alt="")
+                        .album_descr
+                            .album_descr_title Описание:
+                            .album_descr_text
+                                p Группа «Оргия Праведников» выпустила новый студийный альбом «Время Будить Королей». Пластинка уже доступна для загрузки в приложения и прослушивания онлайн.
+                                p Новый альбом «Оргии Праведников» состоит из четырнадцати композиций. Три из них ранее уже публиковались в виде синглов.
+
+                    .album_info
+                        .album_info_title Слушайте альбом на стриминг платформах:
+                        .album_info_platforms
+                            a.stream-item.stream-item--vk(href="#")
+                            a.stream-item.stream-item--ytbm(href="#")
+                            a.stream-item.stream-item--boom(href="#")
+                            a.stream-item.stream-item--ym(href="#")
+                            a.stream-item.stream-item--aplm(href="#")
+                            a.stream-item.stream-item--spotify(href="#")
+                            a.stream-item.stream-item--ytb(href="#")
+                        .album_info_list
+                            .album_info_list_item
+                                a(href="/track.html") Время будить королей
+                            .album_info_list_item
+                                a(href="/track.html") Звезды идут сквозь нас
+                            .album_info_list_item
+                                a(href="/track.html") Advaita
+                            .album_info_list_item
+                                a(href="/track.html") Om tat sat
+                            .album_info_list_item
+                                a(href="/track.html") Выше облаков
+                            .album_info_list_item
+                                a(href="/track.html") In nomine partis
+                            .album_info_list_item
+                                a(href="/track.html") Прыгай в огонь
+                            .album_info_list_item
+                                a(href="/track.html") Мыс брана
+                            .album_info_list_item
+                                a(href="/track.html") Танец казановы
+                            .album_info_list_item
+                                a(href="/track.html") От Бога до земли
+                            .album_info_list_item
+                                a(href="/track.html") Солнце из небытия
+                            .album_info_list_item
+                                a(href="/track.html") Северный ветер
+                            .album_info_list_item
+                                a(href="/track.html") Стоп,
+                            .album_info_list_item
+                                a(href="/track.html") Женя, стоп!
+        include parts/footer
+
+

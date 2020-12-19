@@ -1,0 +1,237 @@
+doctype html
+include parts/head
+link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+link(href='./css/index.css' rel='stylesheet')
+body
+    .main-wrap
+        include parts/header
+        .page-content
+            .first-screen
+                .first-screen_logo
+                    .first-screen_logo_main
+                    .first-screen_logo_bot
+                .first-screen_galery.js-first-screen-slider
+                    .first-screen_galery_item
+                        img(src="/assets/example/example1.jpg" alt="")
+                    .first-screen_galery_item
+                        img(src="/assets/example/example2.jpg" alt="")
+                    .first-screen_galery_item
+                        img(src="/assets/example/example1.jpg" alt="")
+                    .first-screen_galery_item
+                        img(src="/assets/example/example2.jpg" alt="")
+            .single
+                .single_bg
+                    img(src="/assets/example/example2.jpg" alt="")
+                .single_content.container
+                    .single_img
+                        img(src="/assets/example/single.jpg" alt="")
+                    .single_info
+                        .single_info_title Новый сингл
+                        .single_info_name Время будить королей
+                        .single_info_description Новый сингл уже на всех стримминговых платформах
+                        .single_info_links
+                            a.stream-item.stream-item--vk(href="#")
+                            a.stream-item.stream-item--ytbm(href="#")
+                            a.stream-item.stream-item--boom(href="#")
+                            a.stream-item.stream-item--ym(href="#")
+                            a.stream-item.stream-item--aplm(href="#")
+                            a.stream-item.stream-item--spotify(href="#")
+                            a.stream-item.stream-item--ytb(href="#")
+
+
+            .concerts-list
+                .concerts-list_title.title Концерты
+                .concerts-list_wrap.container
+                    .concerts-list_section
+                        .concerts-list_period Ноябрь, 2020
+                        .concerts-list_items
+                            .concerts-list_item
+                                .concerts-list_item_section
+                                    .concerts-list_item_date
+                                        .concerts-list_item_main-info 01 Ноября
+                                        .concerts-list_item_details Пт, 19:00
+                                    .concerts-list_item_name
+                                        .concerts-list_item_main-info Большой акустический концерт
+                                    .concerts-list_item_location
+                                        .concerts-list_item_main-info Санкт-Петербург
+                                        .concerts-list_item_details Ледовый дворец
+                                a(href="").concerts-list_item_btn.btn  Купить билет
+
+
+                            .concerts-list_item
+                                .concerts-list_item_section
+                                    .concerts-list_item_date
+                                        .concerts-list_item_main-info 15 Ноября
+                                        .concerts-list_item_details Пн, 19:00
+                                    .concerts-list_item_name
+                                        .concerts-list_item_main-info Традиционный дачник под Звенигородом!
+                                    .concerts-list_item_location
+                                        .concerts-list_item_main-info Звенигород
+                                        .concerts-list_item_details Стадион
+                                a(href="").concerts-list_item_btn.btn  Купить билет
+
+
+                            .concerts-list_item
+                                .concerts-list_item_section
+                                    .concerts-list_item_date
+                                        .concerts-list_item_main-info 15 Ноября
+                                        .concerts-list_item_details Пн, 19:00
+                                    .concerts-list_item_name
+                                        .concerts-list_item_main-info Традиционный дачник под Звенигородом!
+                                    .concerts-list_item_location
+                                        .concerts-list_item_main-info Звенигород
+                                        .concerts-list_item_details Стадион
+                                a(href="").concerts-list_item_btn.btn  Купить билет
+
+
+                    .concerts-list_section
+                        .concerts-list_period Декабрь, 2020
+                        .concerts-list_items
+                            .concerts-list_item
+                                .concerts-list_item_section
+                                    .concerts-list_item_date
+                                        .concerts-list_item_main-info 01 Ноября
+                                        .concerts-list_item_details Пт, 19:00
+                                    .concerts-list_item_name
+                                        .concerts-list_item_main-info Большой акустический концерт
+                                    .concerts-list_item_location
+                                        .concerts-list_item_main-info Санкт-Петербург
+                                        .concerts-list_item_details Ледовый дворец
+                                a(href="#").concerts-list_item_btn.btn  Купить билет
+                            .concerts-list_item
+                                .concerts-list_item_section
+                                    .concerts-list_item_date
+                                        .concerts-list_item_main-info 15 Ноября
+                                        .concerts-list_item_details Пн, 19:00
+                                    .concerts-list_item_name
+                                        .concerts-list_item_main-info Традиционный дачник под Звенигородом!
+                                    .concerts-list_item_location
+                                        .concerts-list_item_main-info Звенигород
+                                        .concerts-list_item_details Стадион
+                                a(href="#").concerts-list_item_btn.btn  Купить билет
+
+
+            .merch-section
+                .merch
+                    .merch_title.title Мерч
+                    .merch_wrap.container
+                        .merch_content
+                            .merch_img
+                                img(src="/assets/example/example1.jpg")
+                            .merch_item
+                                .merch_item_name Футболка “Время будить королей”
+                                .merch_item_description  Материал футболки износостойкий и выдерживает многократные стирки при этом сохраняет цвет и не кашлатится.
+                                .merch_item_type
+                                    .merch_item_type_section
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="gender" value="female" checked)
+                                                .radio_input
+                                                .radio_label Женская
+
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="gender" value="male")
+                                                .radio_input
+                                                .radio_label Мужская
+                                    .merch_item_type_section
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="size" value="x" checked)
+                                                .radio_input
+                                                .radio_label X
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="size" value="xx")
+                                                .radio_input
+                                                .radio_label XX
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="size" value="xxl")
+                                                .radio_input
+                                                .radio_label XXL
+                                    .merch_item_type_section
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="color" value="white" checked)
+                                                .radio_input
+                                                .radio_label Белая
+                                        .merch_item_type_item
+                                            .radio
+                                                input(type="radio" name="color" value="black")
+                                                .radio_input
+                                                .radio_label Черная
+                                .merch_item_buy
+                                    .merch_item_buy_price 1.199₽
+                                    button.merch_item_buy_btn.btn  купить
+
+            .releases-section
+                .releases
+                    .releases_title.title Релизы
+                    .releases_wrap
+                        .container
+                            .releases_list.js-release-slider
+                                .releases_item-wrap
+                                    a(href="").releases_item
+                                        .releases_item_info
+                                            span 2020
+                                            span 14 треков
+                                        .releases_item_img
+                                            img(src="/assets/example/album1.png" alt="")
+                                        .releases_item_type Альбом
+                                        .releases_item_name Время будить королей
+
+                                .releases_item-wrap
+                                    a(href="").releases_item
+                                        .releases_item_info
+                                            span 2020
+                                            span 14 треков
+                                        .releases_item_img
+                                            img(src="/assets/example/album2.png" alt="")
+                                        .releases_item_type Альбом
+                                        .releases_item_name #джастстудио
+
+                                .releases_item-wrap
+                                    a(href="").releases_item
+                                        .releases_item_info
+                                            span 2020
+                                            span 14 треков
+                                        .releases_item_img
+                                            img(src="/assets/example/album3.png" alt="")
+                                        .releases_item_type Альбом
+                                        .releases_item_name Пламя изнутри
+
+                                .releases_item-wrap
+                                    a(href="").releases_item
+                                        .releases_item_info
+                                            span 2020
+                                            span 14 треков
+                                        .releases_item_img
+                                            img(src="/assets/example/album4.png" alt="")
+                                        .releases_item_type Альбом
+                                        .releases_item_name Для тех, кто видит сны. Vol.2
+
+                                .releases_item-wrap
+                                    a(href="").releases_item
+                                        .releases_item_info
+                                            span 2020
+                                            span 14 треков
+                                        .releases_item_img
+                                            img(src="/assets/example/album1.png" alt="")
+                                        .releases_item_type Альбом
+                                        .releases_item_name Время будить королей
+
+                        .releases_nav.slick-next
+                        .releases_nav.slick-prev
+            .contact-form
+                .container
+                    .contact-form_title.title Вступайте в орден Праведников!
+                    .contact-form_description Члены фан-клуба группы получают последние новости о группе первыми, а также скидки на концерты и мерч
+                    form.contact-form_content
+                        input(type="text" placeholder="Email" name="email" required).contact-form_field
+                        input(type="text" placeholder="Имя" name="name" required).contact-form_field
+                        button.contact-form_btn.btn(type="submit") Вступить в орден
+        include parts/footer
+    script(src='./js/jquery.min.js')
+    script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src='./js/index.js')

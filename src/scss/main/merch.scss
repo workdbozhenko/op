@@ -1,0 +1,84 @@
+.merch {
+  &_title {
+    text-align: center;
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_img {
+    width: 600px;
+    height: 500px;
+    margin-right: 65px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_item {
+    &_name {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &_description {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+
+    &_type {
+      margin-top: 24px;
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+
+      &_section {
+        margin-right: 23px;
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &_item {
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &_buy {
+      display: flex;
+      align-items: center;
+
+      &_price {
+        margin-right: 20px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      &_btn {
+        min-width: 144px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .merch {
+    &_img {
+      width: 426px;
+      height: 426px;
+    }
+  }
+}
