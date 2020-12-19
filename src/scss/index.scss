@@ -219,8 +219,23 @@
 }
 
 @media (max-width: 1200px) {
+  .single {
+    &_content {
+      justify-content: center;
+    }
+
+    &_img {
+      margin-right: 26px;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
   .first-screen {
     &_logo {
+      top: 55%;
+
       &_main {
         width: 34px;
         height: 78px;
@@ -231,6 +246,22 @@
         height: 70px;
         margin-top: 15px;
       }
+    }
+
+    .slick-arrow {
+      top: 55%;
+
+      &.slick-prev {
+        left: 24px;
+      }
+
+      &.slick-next {
+        right: 24px;
+      }
+    }
+
+    .slick-dots {
+      bottom: 23px;
     }
   }
 
@@ -243,17 +274,29 @@
     &_img {
       width: 442px;
       height: 442px;
-      margin-right: 28px;
+
+      flex-shrink: 0;
     }
 
     &_info {
+      padding-top: 98px;
+
       &_name {
         font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: 3px;
       }
     }
   }
 
   .contact-form {
+    padding: 88px 0 232px;
+
+    &_description {
+      max-width: 756px;
+      margin: 0 auto;
+    }
+
     &_content {
       flex-wrap: wrap;
       justify-content: center;
@@ -266,22 +309,26 @@
   }
 }
 
-@media (max-width: 959px) {
-  .single {
-    &_content {
-      padding-top: 60px;
-      padding-bottom: 60px;
+@media (max-width: 768px) {
+  .first-screen {
+    &_logo {
+      top: 50%;
     }
   }
-}
 
-@media (max-width: 768px) {
   .single {
+    &_bg {
+      display: none;
+    }
+
     &_content {
       flex-direction: column;
-      width: 360px;
+      width: 400px;
       margin: 0 auto;
       max-width: 100%;
+      padding: 60px 22px;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
 
     &_info {
@@ -289,7 +336,7 @@
       margin-top: 24px;
 
       &_links {
-        margin: 0 -12px;
+        margin: 20px -12px 0;
 
         .stream-item {
           margin: 12px 12px 0;
@@ -306,6 +353,55 @@
   }
 
   .concerts-list {
-    padding: 70px 0;
+    padding: 58px 0;
+  }
+
+  .merch-section {
+    padding: 65px 0;
+    background: none;
+  }
+
+  .releases-section {
+    padding-top: 88px;
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    padding: 80px 0 122px;
+    width: 380px;
+    margin: 0 auto;
+    max-width: 100%;
+
+    &_title {
+      line-height: 1.2;
+    }
+
+    &_description {
+      line-height: 1.25;
+    }
+
+    &_content {
+      padding-top: 0;
+      margin-top: 40px;
+    }
+
+    &_field {
+      margin-left: 0;
+      width: 100%;
+
+      margin-top: 32px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &_btn {
+      height: 60px;
+      margin-top: 35px;
+      width: 100%;
+    }
   }
 }

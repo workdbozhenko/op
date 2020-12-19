@@ -23,6 +23,7 @@
 
   &_item {
     display: inline-block;
+    max-width: 100%;
 
     &:hover {
       img {
@@ -61,6 +62,7 @@
       width: 267px;
       height: 267px;
       padding: 24px;
+      max-width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -93,7 +95,7 @@
   }
 
   &_item-wrap {
-    margin: 0 12px;
+    padding: 0 12px;
   }
 
   &_nav {
@@ -101,6 +103,47 @@
 
     &.slick-arrow {
       display: block;
+    }
+  }
+}
+
+
+@media (max-width: 960px) {
+  .releases {
+    &_title {
+      margin-bottom: 40px;
+    }
+
+    &_list {
+      .slick-dots {
+        bottom: -33px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .releases {
+    &_title {
+      margin-bottom: 27px;
+      text-align: left;
+      padding: 0 22px;
+    }
+
+    &_item-wrap {
+      padding: 0;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_item {
+      width: 100%;
+      &_name {
+        max-width: 100%;
+      }
     }
   }
 }

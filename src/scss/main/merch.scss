@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
   }
 
   &_item {
@@ -79,6 +80,80 @@
     &_img {
       width: 426px;
       height: 426px;
+      margin-right: 36px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .merch {
+    &_wrap {
+      padding-top: 40px;
+    }
+
+    &_img {
+      align-items: flex-start;
+    }
+
+    &_item {
+      margin-top: 8px;
+
+      &_description {
+        margin-top: 28px;
+      }
+
+      &_buy {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .merch {
+    &_content {
+      flex-direction: column;
+      width: 380px;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    &_img {
+      margin-right: 0;
+      height: auto;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &_item {
+      margin-top: 42px;
+
+      &_type {
+        flex-direction: column;
+        margin-top: 26px;
+
+        &_item {
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &_section {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 26px;
+        }
+      }
+
+      &_buy {
+        margin-top: 23px;
+
+        &_price {
+          margin-right: 25px;
+        }
+      }
     }
   }
 }

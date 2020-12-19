@@ -118,19 +118,65 @@
 }
 
 
-@media (max-width: 959px) {
+@media (max-width: 960px) {
   .concerts-list {
+    &_item {
+      padding: 9px 18px;
+
+      &_section {
+        max-width: 90%;
+      }
+
+      &_name {
+        padding-right: 10px;
+      }
+
+      &_date {
+        flex-basis: 175px;
+      }
+
+      &_btn {
+        width: 140px;
+        .ticket-text {
+          display: none;
+        }
+      }
+    }
+
+    &_period {
+      text-align: center;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .concerts-list {
+    &_section {
+      max-width: 380px;
+      margin: 0 auto 28px;
+    }
+
+    &_period {
+      text-align: left;
+    }
+
     &_items {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 24px;
+      display: block;
     }
 
     &_item {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-bottom: 0;
+      margin-bottom: 27px;
+      padding: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &_section {
         flex-direction: column;
@@ -142,10 +188,12 @@
 
       &_name, &_location, &_date {
         flex-basis: 100%;
+        width: 100%;
+        padding-left: 39px;
       }
 
       &_name {
-        margin-top: 16px;
+        margin-top: 18px;
       }
 
       &_location {
@@ -153,28 +201,18 @@
       }
 
       &_btn {
-        margin-top: 16px;
+        margin-top: 18px;
+        width: auto;
+        padding: 0 35px;
+
+        .ticket-text {
+          display: inline-block;
+        }
       }
     }
 
     &_title {
       margin-bottom: 24px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .concerts-list {slick-dots
-    &_items {
-      display: block;
-    }
-
-    &_item {
-      margin-bottom: 24px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 }

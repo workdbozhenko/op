@@ -19,3 +19,40 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .shop {
+    .merch {
+      margin: 30px 0 0 ;
+      padding-bottom: 60px;
+
+      &_content {
+        align-items: flex-start;
+      }
+
+      &_img {
+        margin-right: 64px;
+        height: auto;
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .shop {
+    .merch {
+      padding-bottom: 32px;
+
+      &_img {
+        margin-right: 0;
+        margin-top: 0;
+      }
+
+      &_item {
+        margin-top: 28px;
+      }
+    }
+  }
+}

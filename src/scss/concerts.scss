@@ -7,3 +7,10 @@
   padding-top: 50px;
   padding-bottom: 65px;
 }
+
+@media(max-width: 768px) {
+  .concerts-list {
+    padding-top: 36px;
+    padding-bottom: 124px;
+  }
+}

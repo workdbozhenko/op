@@ -69,3 +69,26 @@
   }
 
 }
+
+@media (max-width: 960px) {
+  .news {
+    &_container {
+      margin-top: 55px;
+    }
+
+    &_item {
+      &_img {
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .news_container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 25px;
+    grid-row-gap: 26px;
+    grid-column-gap: 0;
+  }
+}

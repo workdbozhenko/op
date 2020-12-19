@@ -69,6 +69,7 @@
 
   &_img-wrap {
     width: 558px;
+    max-width: 100%;
   }
 
   &_img {
@@ -76,6 +77,7 @@
     overflow: hidden;
     width: 558px;
     height: 558px;
+    max-width: 100%;
 
     img {
       width: 100%;
@@ -172,6 +174,97 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .album {
+    &_img-wrap {
+      width: 444px;
+    }
+
+    &_img {
+      width: 444px;
+      height: 441px;
+    }
+
+    &_content {
+      padding-bottom: 33px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .album {
+    .page-content {
+      padding-top: 35px;
+    }
+
+    .head-title {
+      margin-bottom: 42px;
+    }
+
+    .common-page {
+      &_back-link {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+
+      &_title-wrap {
+        flex-direction: column;
+
+        .common-page_title {
+          font-size: 28px;
+          line-height: 1.2;
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    &_details {
+      margin-top: 17px;
+    }
+
+    &_content {
+      flex-direction: column;
+      margin-top: 61px;
+      padding-bottom: 48px;
+    }
+
+    &_img-wrap {
+      order: 2;
+      height: auto;
+      width: 100%;
+      margin-top: 60px;
+    }
+
+    &_img {
+      height: auto;
+      img {
+        width: initial;
+        height: initial;
+      }
+    }
+
+    &_info {
+      order: 1;
+      padding-left: 0;
+
+      &_list {
+        margin-top: 70px;
+      }
+    }
+
+    &_descr {
+      margin-top: 70px;
+    }
+
+    &_track-text {
+      letter-spacing: 1.18px;
+
+      p {
+        margin-bottom: 23.7px;
       }
     }
   }

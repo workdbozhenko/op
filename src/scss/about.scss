@@ -34,7 +34,8 @@
     font-weight: 500;
     color: $whiteColor;
     max-width: 755px;
-    margin: 42px auto 44px;
+    margin: 42px auto 0;
+    padding-bottom: 44px;
 
     p {
       margin-bottom: 23px;
@@ -42,6 +43,32 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .about {
+    background-attachment: fixed;
+
+    &_logo {
+      margin-top: 91px;
+
+      &_main {
+        width: 36px;
+        height: 70px;
+      }
+
+      &_bot {
+        width: 192px;
+        height: 56px;
+        margin-top: 27px;
+      }
+    }
+
+    &_content {
+      margin: 62px auto 0;
+      padding-bottom: 58px;
     }
   }
 }
