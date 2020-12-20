@@ -12,9 +12,10 @@
     width: 100%;
     background: $darkColor;
     display: flex;
-    padding: 16px 24px;
     position: relative;
+    align-items: center;
     margin-top: 24px;
+    padding: 16px 60px 16px 24px;
 
     &:first-child {
       margin-top: 0;
@@ -51,6 +52,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-right: 10px;
     }
 
     &_name {
@@ -82,6 +84,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      flex-shrink: 0;
     }
 
     &_total {
@@ -93,6 +96,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      flex-shrink: 0;
     }
 
     &_remove {
@@ -123,13 +127,13 @@
   &_item-delivery {
     background: $darkColor;
     display: flex;
-    padding: 0 24px;
     position: relative;
     margin-top: 24px;
     color: $whiteColor;
     font-weight: 700;
     align-items: center;
     height: 85px;
+    padding: 0 60px 0 24px;
 
     &_img {
       width: 150px;
@@ -157,25 +161,29 @@
 
     &_total {
       font-size: 18px;
+      flex-shrink: 0;
+      // flex-basis: 150px;
     }
   }
 
   &_item-total {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-weight: 700;
     font-size: 18px;
     padding-left: 228px;
     margin-top: 28px;
+    padding-right: 60px;
 
     &_text {
       color: $secondaryColor;
+      flex-basis: 690px;
     }
 
     &_value {
       color: $whiteColor;
-      flex-basis: 220px;
+      flex-shrink: 0;
+      //flex-basis: 150px;
     }
   }
 
@@ -312,6 +320,7 @@
     display: inline-block;
     pointer-events: none;
   }
+
   select {
     height: 56px;
     width: 100%;
@@ -321,12 +330,16 @@
     padding-left: 16px;
     font-weight: 700;
     color: $darkColor;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    appearance:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     position: relative;
     z-index: 1;
     font-size: 18px;
+    padding-right: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
   }
 }
 
@@ -369,6 +382,177 @@
       padding: 0 20px;
       cursor: pointer;
       height: 53px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart {
+
+    &_item-delivery {
+      &_total {
+        flex-basis: 160px;
+        flex-shrink: 0;
+      }
+    }
+
+    &_item-total {
+      &_value {
+        flex-basis: 160px;
+        flex-shrink: 0;
+      }
+    }
+
+    &_form_submit {
+      button {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    &_items {
+      margin-top: 35px;
+      padding-top: 0;
+    }
+
+    &_item {
+      height: auto;
+      display: block;
+      padding-bottom: 20px;
+      padding-right: 24px;
+
+      &_img {
+        width: auto;
+        margin-right: 0;
+        display: block;
+      }
+
+      &_total, &_price, &_info {
+        flex-basis: initial;
+        display: block;
+        height: auto;
+      }
+
+      &_info {
+        margin-top: 19px;
+        padding-right: 0;
+      }
+
+      &_name {
+        margin-top: 10px;
+      }
+
+      &_descr {
+        margin-top: 8px;
+      }
+
+      &_price {
+        margin-top: 26px;
+
+        .cart_item_section-title {
+          margin-bottom: 10px;
+        }
+      }
+
+      &_total {
+        margin-top: 25px;
+
+        .cart_item_section-title {
+          margin-bottom: 10px;
+        }
+      }
+
+      &_counter {
+        margin-top: 10px;
+        margin-left: 4px;
+      }
+
+      &_remove {
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        margin-top: 24px;
+      }
+
+      &:first-child {
+        .cart_item_section-title {
+          position: relative;
+          top: initial;
+          transform: none;
+        }
+      }
+    }
+
+    &_item-delivery {
+      display: block;
+      padding: 24px;
+      height: auto;
+
+      &_img {
+        margin-bottom: 24px;
+
+        &::after {
+          left: initial;
+          top: initial;
+          position: relative;
+          transform: none;
+          display: block;
+        }
+      }
+
+      &_info {
+        margin-bottom: 24px;
+      }
+
+      &_total {
+
+      }
+    }
+
+    &_item-total {
+      padding: 24px;
+      border-radius: 4px;
+      background-color: $darkColor;
+      display: block;
+
+      &_value {
+        margin-top: 24px;
+      }
+
+      &_text {
+        font-size: 24px;
+      }
+    }
+
+    &_form {
+      margin-top: 60px;
+
+      &_content {
+        display: block;
+      }
+
+      &_col {
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &_submit {
+        margin-top: 24px;
+        text-align: left;
+      }
+    }
+  }
+
+  .select {
+    &::after {
+      right: 14px;
     }
   }
 }

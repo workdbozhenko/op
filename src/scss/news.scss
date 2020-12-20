@@ -15,7 +15,7 @@
     display: inline-block;
 
     &:hover {
-      .news_item_img  img {
+      .news_item_img img {
         transform: scale(1.05);
       }
     }
@@ -85,10 +85,18 @@
 }
 
 @media (max-width: 768px) {
-  .news_container {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 25px;
-    grid-row-gap: 26px;
-    grid-column-gap: 0;
+  .news {
+    &_container {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 25px;
+      grid-row-gap: 26px;
+      grid-column-gap: 0;
+    }
+
+    &_item {
+      &_img {
+        height: 267px;
+      }
+    }
   }
 }

@@ -68,3 +68,39 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .article {
+    .page-content {
+      padding-top: 35px;
+    }
+
+    .head-title {
+      margin-bottom: 42px;
+    }
+
+    .common-page {
+      &_back-link {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+
+      &_title-wrap {
+        flex-direction: column;
+
+        .common-page_title {
+          font-size: 28px;
+          line-height: 1.22;
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    &_content {
+      cite {
+        line-height: 1.22;
+        padding-left: 39px;
+      }
+    }
+  }
+}

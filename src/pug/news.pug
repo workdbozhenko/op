@@ -7,6 +7,12 @@ body
         .page-content.common-page
             .container
                 .common-page_title Новости
+                .dropdown.js-dropdown.tablet-only
+                    .dropdown_active.js-dropdown-current Анонсы
+                    .dropdown_list.js-dropdown-list
+                        .dropdown_list_item(data-value="Анонсы").active Анонсы
+                        .dropdown_list_item(data-value="Новости") Новости
+                        .dropdown_list_item(data-value="Рецензии") Рецензии
                 .common-page_tabs
                     .common-page_tabs_item.active Анонсы
                     .common-page_tabs_item Новости

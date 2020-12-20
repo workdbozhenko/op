@@ -98,6 +98,16 @@ $(document).ready(() => {
 
 	// tabs
 
+	$('.js-dropdown-current').click(() => {
+		$('.js-dropdown').toggleClass('open');
+	});
 
-
+	$('.js-dropdown-list [data-value]').click((e) => {
+		const $el = $(e.currentTarget);
+		const value = $el.data('value');
+		$('[data-value]').removeClass('active');
+		$('.js-dropdown-current').html(value);
+		$('.js-dropdown').removeClass('open');
+		$el.addClass('active');
+	});
 });
