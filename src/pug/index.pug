@@ -120,55 +120,104 @@ body
                 .merch
                     .merch_title.title Мерч
                     .merch_wrap.container
-                        .merch_content
-                            .merch_img
-                                img(src="/assets/example/example1.jpg")
-                            .merch_item
-                                .merch_item_name Футболка “Время будить королей”
-                                .merch_item_description  Материал футболки износостойкий и выдерживает многократные стирки при этом сохраняет цвет и не кашлатится.
-                                .merch_item_type
-                                    .merch_item_type_section
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="gender" value="female" checked)
-                                                .radio_input
-                                                .radio_label Женская
+                        .merch_slider.js-merch-slider
+                            .merch_slide
+                                .merch_content
+                                    .merch_img
+                                        img(src="/assets/example/example1.jpg")
+                                    .merch_item
+                                        .merch_item_name Футболка “Время будить королей”
+                                        .merch_item_description  Материал футболки износостойкий и выдерживает многократные стирки при этом сохраняет цвет и не кашлатится.
+                                        .merch_item_type
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="gender" value="female" checked)
+                                                        .radio_input
+                                                        .radio_label Женская
 
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="gender" value="male")
-                                                .radio_input
-                                                .radio_label Мужская
-                                    .merch_item_type_section
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="size" value="x" checked)
-                                                .radio_input
-                                                .radio_label X
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="size" value="xx")
-                                                .radio_input
-                                                .radio_label XX
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="size" value="xxl")
-                                                .radio_input
-                                                .radio_label XXL
-                                    .merch_item_type_section
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="color" value="white" checked)
-                                                .radio_input
-                                                .radio_label Белая
-                                        .merch_item_type_item
-                                            .radio
-                                                input(type="radio" name="color" value="black")
-                                                .radio_input
-                                                .radio_label Черная
-                                .merch_item_buy
-                                    .merch_item_buy_price 1.199₽
-                                    button.merch_item_buy_btn.btn  купить
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="gender" value="male")
+                                                        .radio_input
+                                                        .radio_label Мужская
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="size" value="x" checked)
+                                                        .radio_input
+                                                        .radio_label X
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="size" value="xx")
+                                                        .radio_input
+                                                        .radio_label XX
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="size" value="xxl")
+                                                        .radio_input
+                                                        .radio_label XXL
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="color" value="white" checked)
+                                                        .radio_input
+                                                        .radio_label Белая
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="color" value="black")
+                                                        .radio_input
+                                                        .radio_label Черная
+                                        .merch_item_buy
+                                            .merch_item_buy_price 1.199₽
+                                            button.merch_item_buy_btn.btn  купить
+
+                            .merch_slide
+                                .merch_content
+                                    .merch_img
+                                        img(src="/assets/example/example2.jpg")
+                                    .merch_item
+                                        .merch_item_name Футболка “Время будить королей”
+                                        .merch_item_description  Материал футболки износостойкий и выдерживает многократные стирки при этом сохраняет цвет и не кашлатится.
+                                        .merch_item_type
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="gender1" value="female" checked)
+                                                        .radio_input
+                                                        .radio_label Женская
+
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="gender1" value="male")
+                                                        .radio_input
+                                                        .radio_label Мужская
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="size1" value="x" checked)
+                                                        .radio_input
+                                                        .radio_label X
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="size1" value="xx")
+                                                        .radio_input
+                                                        .radio_label XX
+
+                                            .merch_item_type_section
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="color1" value="white" checked)
+                                                        .radio_input
+                                                        .radio_label Синяя
+                                                .merch_item_type_item
+                                                    .radio
+                                                        input(type="radio" name="color1" value="black")
+                                                        .radio_input
+                                                        .radio_label Розовая
+                                        .merch_item_buy
+                                            .merch_item_buy_price 1.199₽
+                                            button.merch_item_buy_btn.btn  купить
 
             .releases-section
                 .releases

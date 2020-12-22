@@ -169,6 +169,10 @@ body {
   background-color: $bgColor;
   color: $whiteColor;;
   font-weight: 400;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 a {

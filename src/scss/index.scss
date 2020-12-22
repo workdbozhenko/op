@@ -161,6 +161,11 @@
   background-size: cover;
   padding: 70px 0;
   min-height: 700px;
+  position: relative;
+
+  .slick-dots {
+    bottom: -22px;
+  }
 }
 
 .releases-section {
@@ -307,6 +312,12 @@
       margin-top: 40px;
     }
   }
+
+  .merch-section {
+    .slick-dots {
+      bottom: -55px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -359,6 +370,10 @@
   .merch-section {
     padding: 65px 0;
     background: none;
+
+    .slick-dots {
+      bottom: -45px;
+    }
   }
 
   .releases-section {
