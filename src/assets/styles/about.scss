@@ -2,7 +2,7 @@
 @import "./main/common";
 
 .about {
-  background: url('/../images/about-bg.jpg') center center no-repeat;
+  background: url('../images/about-bg.jpg') center center no-repeat;
   background-size: cover;
 
   &_logo {
@@ -15,7 +15,7 @@
     &_main {
       width: 58px;
       height: 114px;
-      background: url('/../images/top-logo.svg') no-repeat center;
+      background: url('../images/top-logo.svg') no-repeat center;
       background-size: contain;
     }
 
@@ -23,7 +23,7 @@
       width: 309px;
       height: 90px;
       margin-top: 46px;
-      background: url('/../images/bot-logo.svg') no-repeat center;
+      background: url('../images/bot-logo.svg') no-repeat center;
       background-size: contain;
     }
   }
