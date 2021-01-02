@@ -116,7 +116,7 @@
         transform: translate(-50%, -50%);
         width: 19px;
         height: 19px;
-        background: url('/img/icons/basket.svg') no-repeat center;
+        background: url('/../images/icons/basket.svg') no-repeat center;
         background-size: contain;
         display: inline-block;
       }
@@ -146,7 +146,7 @@
         position: absolute;
         width: 24px;
         height: 24px;
-        background: url('/img/icons/delivery.svg') no-repeat center;
+        background: url('/../images/icons/delivery.svg') no-repeat center;
         background-size: contain;
         left: 50%;
         top: 50%;
@@ -276,11 +276,11 @@
     cursor: pointer;
 
     &--inc {
-      background-image: url('/img/icons/plus.svg');
+      background-image: url('/../images/icons/plus.svg');
     }
 
     &--dec {
-      background-image: url('/img/icons/minus.svg');
+      background-image: url('/../images/icons/minus.svg');
     }
 
     &.disabled {
@@ -314,7 +314,7 @@
     transform: translateY(-50%);
     width: 18px;
     height: 9px;
-    background: url('/img/icons/chevron.svg') no-repeat center;
+    background: url('/../images/icons/chevron.svg') no-repeat center;
     background-size: contain;
     z-index: 2;
     display: inline-block;

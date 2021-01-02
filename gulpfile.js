@@ -40,7 +40,7 @@ function pugTask(done) {
 
 function css(done) {
     gulp
-        .src('./src/scss/*.scss')
+        .src('./src/assets/styles/*.scss')
         .pipe(sass({
             includePaths: ['node_modules']
         }))
@@ -61,26 +61,26 @@ function js(done) {
 
 function assets(done) {
     gulp
-        .src('./src/assets/**')
-        .pipe(gulp.dest(buildDir + 'assets'))
+        .src('./src/sample/**')
+        .pipe(gulp.dest(buildDir + 'sample'))
         .pipe(browsersync.stream());
     done();
 }
 
 function img(done) {
      gulp
-        .src('./src/img/**/*')
+        .src('./src/assets/images/**/*')
          .pipe(plumber())
-         .pipe(gulp.dest(buildDir + 'img'));
+         .pipe(gulp.dest(buildDir + 'images'));
     done();
 }
 
 function watchFiles() {
-    gulp.watch('./src/scss/**/*.scss', css);
+    gulp.watch('./src/assets/styles/**/*.scss', css);
     gulp.watch('./src/**/*.pug', pugTask);
     gulp.watch('./src/**/*.js', js);
-    gulp.watch('./src/assets/**', assets);
-    gulp.watch('./src/img/**', img);
+    gulp.watch('./src/sample/**', assets);
+    gulp.watch('./src/assets/images/**', img);
 }
 
 const devBuild = gulp.series(clean, gulp.parallel(pugTask, css, assets, js), img);
