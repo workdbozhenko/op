@@ -261,19 +261,19 @@ h4 {
   &--vk {
     width: 23px;
     height: 15px;
-    background-image: url('/img/icons/vk.svg');
+    background-image: url('../images/icons/vk.svg');
   }
 
   &--fb {
     width: 24px;
     height: 24px;
-    background-image: url('/img/icons/fb.svg');
+    background-image: url('../images/icons/fb.svg');
   }
 
   &--inst {
     width: 24px;
     height: 24px;
-    background-image: url('/img/icons/inst.svg');
+    background-image: url('../images/icons/inst.svg');
   }
 }
 
@@ -291,31 +291,31 @@ h4 {
   }
 
   &--vk {
-    background-image: url('/img/icons/vkm.svg');
+    background-image: url('../images/icons/vkm.svg');
   }
 
   &--ytbm {
-    background-image: url('/img/icons/ytbm.svg');
+    background-image: url('../images/icons/ytbm.svg');
   }
 
   &--boom {
-    background-image: url('/img/icons/boom.svg');
+    background-image: url('../images/icons/boom.svg');
   }
 
   &--ym {
-    background-image: url('/img/icons/ym.svg');
+    background-image: url('../images/icons/ym.svg');
   }
 
   &--aplm {
-    background-image: url('/img/icons/aplm.svg');
+    background-image: url('../images/icons/aplm.svg');
   }
 
   &--spotify {
-    background-image: url('/img/icons/spotify.svg');
+    background-image: url('../images/icons/spotify.svg');
   }
 
   &--ytb {
-    background-image: url('/img/icons/ytb.svg');
+    background-image: url('../images/icons/ytb.svg');
   }
 }
 
@@ -410,7 +410,7 @@ h4 {
   &_logo {
     width: 28px;
     height: 42px;
-    background: url('/img/logo.svg') no-repeat center;
+    background: url('../images/logo.svg') no-repeat center;
     background-size: contain;
     display: block;
   }
@@ -473,7 +473,7 @@ h4 {
   &_cart {
     width: 24px;
     height: 24px;
-    background: url('/img/icons/cart.svg') no-repeat center;
+    background: url('../images/icons/cart.svg') no-repeat center;
     background-size: contain;
     position: relative;
     margin-right: 7px;
@@ -511,7 +511,7 @@ h4 {
     width: 28px;
     height: 42px;
     margin: 0 auto 32px;
-    background: url('/img/logo.svg') no-repeat center;
+    background: url('../images/logo.svg') no-repeat center;
     background-size: contain;
     display: block;
   }
@@ -605,7 +605,7 @@ h4 {
         transform: translateY(-50%);
         width: 17px;
         height: 10px;
-        background: url('/img/icons/nav-arrow.svg') no-repeat center;
+        background: url('../images/icons/nav-arrow.svg') no-repeat center;
         background-size: contain;
       }
     }
@@ -620,7 +620,7 @@ h4 {
   &_back-link {
     width: 17px;
     height: 10px;
-    background: url('/img/icons/nav-arrow.svg') no-repeat center;
+    background: url('../images/icons/nav-arrow.svg') no-repeat center;
     background-size: contain;
     display: inline-block;
     vertical-align: middle;
@@ -696,7 +696,7 @@ h4 {
       content: '';
       width: 14px;
       height: 9px;
-      background: url('/img/icons/chevron-white.svg') no-repeat center;
+      background: url('../images/icons/chevron-white.svg') no-repeat center;
       background-size: contain;
       display: block;
       margin-left: 10px;
@@ -804,7 +804,7 @@ h4 {
       &-logo {
         width: 28px;
         height: 42px;
-        background: url('/img/logo.svg') no-repeat center;
+        background: url('../images/logo.svg') no-repeat center;
         background-size: contain;
         display: block;
       }
