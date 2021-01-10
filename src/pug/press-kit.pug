@@ -1,0 +1,78 @@
+doctype html
+include parts/head
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha512-+0xbDUTlmh0KgW4vlKvBcjCGKlC5uzjgk6AeU92HDLwKO0V3VU+QesTGpMWO++QbpY+EDeI9XrzTC3j88f8WjA==" crossorigin="anonymous")
+link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+link(href='./css/press-kit.css' rel='stylesheet')
+body
+    .main-wrap.press-kit
+        include parts/header
+        .page-content
+            #fullpage
+                .section
+                    .press-kit_start
+                        .press-kit_start_bg(style="background-image: url(../sample/example/example1.jpg);")
+                        .press-kit_start_title Пресс-кит
+                        .press-kit_start_logo
+                            .press-kit_start_logo_top
+                            .press-kit_start_logo_bot
+                .section
+                    .press-kit_about
+                        .press-kit_about_bg(style="background-image: url(../sample/example/example1.jpg);")
+                        .press-kit_about_content
+                            .press-kit_about_title О группе
+                            .press-kit_about_text «Оргия Праведников» — московская группа с более чем двадцатилетней историей. Основной чертой их творчества является сочетание, казалось бы, несовместимых музыкальных стилей – от прогрессивного рока до классического романса, и от барокко до death metal – причём нередко в рамках одного произведения. Практически каждая композиция группы стилистически отличается от остальных, но неизменными остаются их мелодичность и насыщенное полифоничное звучание.
+                .section
+                    .press-kit_music
+                        .press-kit_music_content
+                            .press-kit_music_block
+                                .press-kit_music_title МУЗЫКА
+                                .press-kit_music_list
+                                .press-kit_music_services
+                                    .press-kit_music_services_title Так же мы есть на стриминг сервисах:
+                                    .press-kit_music_services_list
+                                        a.stream-item.stream-item--aplm(href="#")
+                                        a.stream-item.stream-item--spotify(href="#")
+                                        a.stream-item.stream-item--ytbm(href="#")
+                                        a.stream-item.stream-item--vk(href="#")
+                                        a.stream-item.stream-item--ym(href="#")
+                                        a.stream-item.stream-item--deezer(href="#")
+                                        a.stream-item.stream-item--boom(href="#")
+                        .press-kit_music_image
+                            img(src="/sample/example/music.jpg" alt="")
+                .section
+                    .section
+                        .press-kit_press
+                            .container
+                                .press-kit_press_title о нас говорят
+                                .press-kit_press_content
+                                    .press-kit_press_list
+                                        .press-kit_press_list_item
+                                            .press-kit_press_list_item_source  GUITAR.RU
+                                            .press-kit_press_list_item_title Оргия праведников: Пламя изнутри
+                                    .press-kit_press_details
+                                        .press-kit_press_details_img
+                                            img(src="/sample/example/press.jpg" alt="")
+                                        .press-kit_press_details_text Дмитрий Пучков / ГОБЛИН
+                                        .press-kit_press_details_title Сергей Калугин про рок-музыку
+
+                .section
+                    .press-kit_gallery
+                        .press-kit_gallery_item
+                            img(src="/sample/example/gallery-item-5.jpg" alt="")
+                        .press-kit_gallery_item
+                            img(src="/sample/example/gallery-item-4.jpg" alt="")
+                        .press-kit_gallery_item
+                            img(src="/sample/example/gallery-item-3.jpg" alt="")
+                        .press-kit_gallery_item
+                            img(src="/sample/example/gallery-item-2.jpg" alt="")
+                        .press-kit_gallery_item
+                            img(src="/sample/example/gallery-item-1.jpg" alt="")
+
+            section.section
+
+        include parts/footer
+    script(src='./js/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js')
+    script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src='./js/script.js')

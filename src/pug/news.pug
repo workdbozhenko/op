@@ -13,10 +13,11 @@ body
                         .dropdown_list_item(data-value="Анонсы").active Анонсы
                         .dropdown_list_item(data-value="Новости") Новости
                         .dropdown_list_item(data-value="Рецензии") Рецензии
-                .common-page_tabs
-                    .common-page_tabs_item.active Анонсы
-                    .common-page_tabs_item Новости
-                    .common-page_tabs_item Рецензии
+                ul.common-page_tabs
+                    li.common-page_tabs_item.active
+                        a(href="#") Анонсы
+                    a(href="#").common-page_tabs_item Новости
+                    a(href="#").common-page_tabs_item Рецензии
                 .news_container
                     - for(var i = 0; i < 5; i++)
                         a(href="#").news_item
@@ -27,6 +28,8 @@ body
                             .news_item_title Анонс интервью «Оргия Праведников»: «Это наш лучший альбом!»
                             .news_item_text 1 октября выходит седьмой полноформатный студийный альбом «Время будить королей». Средства на его выпуск дал краудфандинг, кроме того, выпуск альбома поддержали бизнес-структуры.
 
+                .news_load-more
+                    button.btn Показать больше
         include parts/footer
     script(src='./js/jquery.min.js')
     script(src='./js/script.js')

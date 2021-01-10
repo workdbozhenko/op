@@ -29,6 +29,7 @@
     }
 
     &_img {
+      background-color: #000;
       width: 100%;
       height: 267px;
       margin-bottom: 16px;
@@ -68,6 +69,16 @@
     }
   }
 
+  &_load-more {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    button {
+      min-width: 264px;
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 960px) {

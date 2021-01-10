@@ -77,6 +77,8 @@
     width: 558px;
     height: 558px;
     max-width: 100%;
+    position: sticky;
+    top: 50px;
   }
 
   &_descr {
@@ -233,6 +235,8 @@
     &_img {
       height: auto;
       width: auto;
+      position: relative;
+      top: initial;
 
       img {
         width: initial;

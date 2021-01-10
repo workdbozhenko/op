@@ -47,6 +47,7 @@
       font-weight: 700;
       color: $whiteColor;
       line-height: 1.22;
+      padding-right: 10px;
     }
 
     &_details {
@@ -97,6 +98,7 @@
       padding-left: 40px;
       position: relative;
       flex-basis: 240px;
+      padding-right: 10px;
 
       &::before {
         content: '';

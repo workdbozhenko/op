@@ -1,0 +1,272 @@
+@import "./main/vars";
+@import "./main/common";
+
+
+.press-kit {
+  .header {
+    background-color: $bgColor;
+
+    &_streams {
+      display: none;
+    }
+
+    &_main {
+      &_wrap {
+        height: 90px;
+      }
+    }
+  }
+
+  &_start {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &_title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.21;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 90px;
+    }
+
+    &_logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_top {
+        width: 76px;
+        height: 114px;
+        margin-bottom: 34px;
+        background: url('../images/logo.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      &_bot {
+        width: 309px;
+        height: 90px;
+        background: url('../images/bot-logo.svg') no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &_bg {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+      }
+    }
+  }
+
+  &_about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &_bg {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+      }
+    }
+
+    &_content {
+      width: 752px;
+      max-width: 100%;
+    }
+
+    &_title {
+      font-size: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    &_text {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: #fff;
+      margin-top: 24px;
+    }
+  }
+
+  &_music {
+    display: flex;
+    height: 100vh;
+
+    &_content {
+      width: 50%;
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &_image {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_block {
+      width: 560px;
+      max-width: 100%;
+    }
+
+    &_title {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+
+    &_services {
+      margin-top: 26px;
+
+      &_title {
+        margin-bottom: 24px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      &_list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &_list {
+      width: 100%;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &_gallery {
+    height: 100vh;
+    display: flex;
+
+    &_item {
+      width: 20%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &_press {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &_title {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 53px;
+    }
+
+    &_content {
+      display: flex;
+    }
+
+    &_details, &_list {
+      width: 50%;
+    }
+
+    &_details {
+      &_img {
+        width: 558px;
+        height: 377px;
+        max-width: 100%;
+      }
+
+      &_text {
+        color: $secondaryColor;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 16px;
+      }
+
+      &_title {
+        margin-top: 8px;
+        font-weight: 700;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.21;
+      }
+    }
+
+    &_list {
+      &_item {
+        margin-bottom: 53px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &_source {
+          color: $secondaryColor;
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+
+        &_title {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
