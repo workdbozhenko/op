@@ -1,0 +1,73 @@
+@import "./main/vars";
+@import "./main/common";
+
+
+.error404 {
+  &_bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 175px 0 237px;
+  }
+
+  &_error {
+    width: 280px;
+    height: 100px;
+    background: url('../images/icons/error404.svg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto 24px;
+  }
+
+  &_text {
+    max-width: 210px;
+    margin: 0 auto 24px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $whiteColor;
+  }
+
+  &_btn {
+    .btn {
+      min-width: 200px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .error404 {
+    &_content {
+      padding: 110px 0;
+    }
+  }
+}

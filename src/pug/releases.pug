@@ -14,11 +14,15 @@ body
                         .dropdown_list_item(data-value="Видео") Видео
                         .dropdown_list_item(data-value="Single") Single
                         .dropdown_list_item(data-value="Сборник") Сборник
-                .common-page_tabs
-                    a(href="#").common-page_tabs_item.active Альбомы
-                    a(href="#").common-page_tabs_item Видео
-                    a(href="#").common-page_tabs_item Single
-                    a(href="#").common-page_tabs_item Сборник
+                ul.common-page_tabs
+                    li.common-page_tabs_item.active
+                        a(href="#") Альбомы
+                    li.common-page_tabs_item
+                        a(href="#") Видео
+                    li.common-page_tabs_item
+                        a(href="#") Single
+                    li.common-page_tabs_item
+                        a(href="#") Сборник
                 .releases
                     a(href="/album.html").releases_item
                         .releases_item_info

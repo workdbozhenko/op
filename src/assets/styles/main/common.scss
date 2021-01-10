@@ -286,14 +286,14 @@ h4 {
 .stream-item {
   width: 24px;
   height: 24px;
-  margin-left: 24px;
+  margin-right: 24px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
 
-  &:first-child {
-    margin-left: 0;
+  &:last-child {
+    margin-right: 0;
   }
 
   &--vk {
@@ -569,7 +569,6 @@ h4 {
   }
 
   &_sn {
-    margin-top: 62px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,6 +582,13 @@ h4 {
     font-size: 18px;
     color: $baseColor;
     margin-top: 55px;
+  }
+
+  &_section {
+    margin-top: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -655,7 +661,6 @@ h4 {
 
     &_item {
       height: 57px;
-      padding: 0 34px;
       border-radius: 50px;
       display: inline-flex;
       align-items: center;
@@ -666,6 +671,7 @@ h4 {
       border: 2px solid rgba(255, 255, 255, 0.2);
       margin-left: 24px;
       cursor: pointer;
+      list-style: none;
 
       &:first-child {
         margin-left: 0;
@@ -674,6 +680,16 @@ h4 {
       &.active {
         background-color: $baseColor;
         border-color: transparent;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 34px;
+        height: 100%;
+        width: 100%;
+        color: $whiteColor;;
       }
     }
   }
@@ -761,6 +777,118 @@ h4 {
 
   li {
     list-style: none;
+  }
+}
+
+.mfp-content {
+  .modal {
+    display: block;
+  }
+}
+
+.modal {
+  width: 600px;
+  background-color: $bgColor;
+  padding: 32px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: none;
+
+  &_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: $whiteColor;
+    font-weight: 700;
+    max-width: 325px;
+    margin: 0 auto;
+  }
+
+  &_logo {
+    width: 28px;
+    height: 42px;
+    background: url('../images/logo.svg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto 32px;
+  }
+
+  &_text {
+    color: $secondaryColor;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 37px;
+  }
+
+  &_success {
+    width: 54px;
+    height: 54px;
+    margin: 37px auto 0;
+    background: url('../images/icons/icon-success.svg') no-repeat center;
+    background-size: contain;
+  }
+}
+
+.lang {
+  position: relative;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/icon-globus.svg') no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  &::after {
+    content: '';
+    width: 18px;
+    height: 9px;
+    background: url('../images/icons/icon-lang-arrow.svg') no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 9px;
+  }
+
+  &.active {
+    .lang_list {
+      display: block;
+    }
+  }
+
+  &_selected {
+    font-size: 18px;
+    font-weight: 700;
+    color: $whiteColor;
+    text-transform: uppercase;
+  }
+
+  &_list {
+    position: absolute;
+    padding: 12px 24px;
+    bottom: calc(100% + 10px);
+    left: -15px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: none;
+
+    &_item {
+      color: #000;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 12px 0;
+
+      &.active {
+        display: none;
+      }
+    }
   }
 }
 

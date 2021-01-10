@@ -86,9 +86,9 @@ $(document).ready(() => {
 		const $btn = $(e.currentTarget);
 		const type = $btn.data('type');
 		const $parentContainer = $btn.closest('.js-counter');
-		const $input  = $parentContainer.find('input[name="count"]');
+		const $input = $parentContainer.find('input[name="count"]');
 		const inputValue = $input.val();
-		const productCount  = inputValue ? parseFloat(inputValue) : 1;
+		const productCount = inputValue ? parseFloat(inputValue) : 1;
 
 		let newValue = productCount;
 
@@ -98,7 +98,7 @@ $(document).ready(() => {
 		} else if (type === 'dec') {
 			if (newValue > 1) {
 				newValue = productCount - 1;
-				if(newValue === 1) {
+				if (newValue === 1) {
 					$btn.addClass('disabled');
 				}
 			} else {
@@ -123,9 +123,9 @@ $(document).ready(() => {
 		$el.addClass('active');
 	});
 
-	$(window).scroll(function(){
+	$(window).scroll(function () {
 		const sticky = $('.header');
-		const	scroll = $(window).scrollTop();
+		const scroll = $(window).scrollTop();
 		const windowHeight = window.innerHeight;
 
 		if (scroll >= windowHeight) {
@@ -136,12 +136,51 @@ $(document).ready(() => {
 	});
 
 	const $fullPage = $('#fullpage');
-	if ($fullPage.length) {
-		$fullPage.fullpage({
-			//options here
-			licenseKey: '05558DB6-5984466D-A33F10BD-AC91C099',
-			autoScrolling:true,
-			scrollHorizontally: true
+	// if ($fullPage.length) {
+	// 	$fullPage.fullpage({
+	// 		//options here
+	// 		licenseKey: '05558DB6-5984466D-A33F10BD-AC91C099',
+	// 		autoScrolling: true,
+	// 		scrollHorizontally: true
+	// 	});
+	// }
+
+
+	const $lng = $('.js-lng');
+	$lng.click(function () {
+		$(this).addClass('active');
+	});
+
+	$('.js-lng .lang_list_item').click((e) => {
+		e.stopPropagation();
+		const $el = $(e.currentTarget);
+		const lng = $el.data('lng');
+		$('.lang_list_item').removeClass('active');
+		$el.addClass('active');
+		$('.lang_selected').html(lng);
+		$lng.removeClass('active');
+	});
+
+	$(document).click(function (event) {
+		const isActive = $lng.hasClass('active');
+		if (!isActive) {
+			return;
+		}
+		const lngBlock = $lng[0];
+		const target = event.target;
+		const isSame = target.isEqualNode(lngBlock);
+		const isChild = lngBlock.contains(target);
+
+		if (!isSame && !isChild) {
+			$lng.removeClass('active');
+		}
+	});
+
+	// TODO:
+	if ($('.popup-modal').magnificPopup) {
+		$('.popup-modal').magnificPopup({
+			type: 'inline',
+			closeOnBgClick: true,
 		});
 	}
 });

@@ -33,8 +33,6 @@
       width: 309px;
       height: 90px;
       margin-top: 46px;
-      background: url('../images/bot-logo.svg') no-repeat center;
-      background-size: contain;
     }
   }
 
@@ -147,6 +145,10 @@
 
     &_links {
       margin-top: 32px;
+
+      .stream-item {
+        margin-bottom: 12px;
+      }
     }
   }
 

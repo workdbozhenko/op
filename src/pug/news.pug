@@ -16,8 +16,10 @@ body
                 ul.common-page_tabs
                     li.common-page_tabs_item.active
                         a(href="#") Анонсы
-                    a(href="#").common-page_tabs_item Новости
-                    a(href="#").common-page_tabs_item Рецензии
+                    li.common-page_tabs_item
+                        a(href="#") Новости
+                    li.common-page_tabs_item
+                        a(href="#") Рецензии
                 .news_container
                     - for(var i = 0; i < 5; i++)
                         a(href="#").news_item

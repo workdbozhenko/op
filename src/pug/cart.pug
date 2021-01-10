@@ -1,6 +1,7 @@
 doctype html
 include parts/head
 link(href='./css/cart.css' rel='stylesheet')
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous")
 body
     .main-wrap.cart
         include parts/header
@@ -103,5 +104,16 @@ body
                     .cart_form_submit
                         button(type="submit").btn Купить
         include parts/footer
+        a(class="popup-modal" href="#modal-success-order" style="color: #fff;") SHOW SUCCESS ORDER MODAL
+        a(class="popup-modal" href="#modal-add-to-cart" style="color: #fff;") SHOW ADD TO CART MODAL
+        .modal#modal-success-order
+            .modal_logo
+            .modal_title Спасибо за заказ
+            .modal_success
+            .modal_text Мы получили Ваш заказ и наш менеджер свяжется с Вами для уточнения деталей заказа в ближайшее время.
+        .modal#modal-add-to-cart
+            .modal_logo
+            .modal_title Товар добавлен <br> в корзину
     script(src='./js/jquery.min.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous")
     script(src='./js/script.js')

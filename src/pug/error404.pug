@@ -1,0 +1,18 @@
+doctype html
+include parts/head
+link(href='./css/error404.css' rel='stylesheet')
+body
+    .main-wrap.error404
+        include parts/header
+        .page-content.common-page
+            .error404_bg
+                img(src="../sample/example/example1.jpg" alt="")
+            .error404_content
+                .error404_error
+                .error404_text Страницы не существует. Вернуться на главную.
+                .error404_btn
+                    a(href="/").btn на главную
+
+        include parts/footer
+    script(src='./js/jquery.min.js')
+    script(src='./js/script.js')

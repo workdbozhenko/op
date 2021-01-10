@@ -65,10 +65,13 @@
     display: flex;
     margin-top: 53px;
     padding-bottom: 52px;
+    align-items: flex-start;
   }
 
   &_img-wrap {
     width: 50%;
+    position: sticky;
+    top: 50px;
   }
 
   &_img {
@@ -77,8 +80,6 @@
     width: 558px;
     height: 558px;
     max-width: 100%;
-    position: sticky;
-    top: 50px;
   }
 
   &_descr {
@@ -230,13 +231,13 @@
       width: 100%;
       margin-top: 60px;
       max-width: 100%;
+      position: relative;
+      top: initial;
     }
 
     &_img {
       height: auto;
       width: auto;
-      position: relative;
-      top: initial;
 
       img {
         width: initial;
