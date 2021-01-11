@@ -18,7 +18,7 @@
   }
 
   &_start {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@
   }
 
   &_about {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,7 +202,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 
     &_title {
       font-size: 28px;
@@ -245,6 +245,7 @@
     }
 
     &_list {
+      padding-right: 20px;
       &_item {
         margin-bottom: 53px;
 
@@ -263,6 +264,141 @@
           color: #fff;
           font-size: 24px;
           font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &_contacts {
+    min-height: 100vh;
+    padding: 200px 0;
+
+    &_title {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    &_data {
+      display: flex;
+    }
+
+    &_img {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      margin-right: 27px;
+    }
+
+    &_user {
+      margin-bottom: 28px;
+    }
+
+    &_name {
+      font-size: 24px;
+      font-weight: 700;
+      color: $whiteColor;
+    }
+
+    &_position {
+      font-size: 15px;
+      color: $secondaryColor;
+      font-weight: 500;
+    }
+
+    &_contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_phone, &_email, &_skype {
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 40px;
+      position: relative;
+      color: $whiteColor;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &_phone {
+      &::before {
+        background-image: url('../images/icons/smartphone.svg');
+      }
+    }
+
+    &_email {
+      margin-top: 22px;
+      color: $baseColor;
+
+      &::before {
+        background-image: url('../images/icons/mail.svg');
+      }
+    }
+
+    &_skype {
+      margin-top: 22px;
+      &::before {
+        background-image: url('../images/icons/skype.svg');
+      }
+    }
+
+
+    &_content {
+      display: flex;
+    }
+
+    &_data {
+      width: 50%;
+    }
+
+    &_form {
+      width: 50%;
+
+      &_field {
+        margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        textarea, input {
+          width: 100%;
+          background: $whiteColor;
+          border-radius: 4px;
+          padding: 0 16px;
+          font-weight: 700;
+          font-size: 18px;
+          color: $darkColor;
+          border: 2px solid transparent;
+        }
+
+        input {
+          height: 56px;
+        }
+
+        textarea {
+          height: 150px;
+          padding: 16px;
+        }
+
+        button {
+          min-width: 261px;
         }
       }
     }

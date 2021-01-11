@@ -136,14 +136,14 @@ $(document).ready(() => {
 	});
 
 	const $fullPage = $('#fullpage');
-	// if ($fullPage.length) {
-	// 	$fullPage.fullpage({
-	// 		//options here
-	// 		licenseKey: '05558DB6-5984466D-A33F10BD-AC91C099',
-	// 		autoScrolling: true,
-	// 		scrollHorizontally: true
-	// 	});
-	// }
+	if ($fullPage.length) {
+		$fullPage.fullpage({
+			//options here
+			licenseKey: '05558DB6-5984466D-A33F10BD-AC91C099',
+			autoScrolling: true,
+			scrollHorizontally: true
+		});
+	}
 
 
 	const $lng = $('.js-lng');
