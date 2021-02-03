@@ -654,6 +654,7 @@ h4 {
     display: inline-block;
     vertical-align: middle;
     margin-right: 14px;
+    flex-shrink: 0;
   }
 
   &_tabs {
@@ -763,6 +764,10 @@ h4 {
       margin-bottom: 12px;
       font-weight: 700;
 
+      a {
+        color: $whiteColor;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -865,6 +870,10 @@ h4 {
     .lang_list {
       display: block;
     }
+
+    &::after {
+      transform: rotate(180deg);
+    }
   }
 
   &_selected {
@@ -891,6 +900,10 @@ h4 {
 
       &.active {
         display: none;
+      }
+
+      &:hover {
+        color: $baseColor;
       }
     }
   }
@@ -956,6 +969,7 @@ h4 {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      transition: 0.3s ease;
 
       &-logo {
         width: 28px;
@@ -1011,9 +1025,11 @@ h4 {
       }
 
       &.hidden {
+        padding: 18px 24px;
+        justify-content: flex-end;
+
         .header_mobile-logo {
-          opacity: 0;
-          pointer-events: none;
+          display: none;
         }
       }
     }
